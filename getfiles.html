@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- insert data from GPS Logger file into MySQL DB -->
+
+<head>
+<title>Select GPS log file to map</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<style type="text/css">
+body {
+ padding:1em;
+}
+form {
+ width:60em;
+}
+</style>
+</head>
+<body>
+<p>Select a log file which has been recorded by Mendhak&rsquo;s <a href="https://play.google.com/store/apps/details?id=com.mendhak.gpslogger">GPS Logger app</a> with the text file option.</p>
+<form enctype="multipart/form-data" action="encode.php" method="POST">
+<fieldset><legend>Select a file:</legend>
+<input type="file" name="gpslogfile" accept="text/plain" /><br />
+<input type="submit" value="Include selected file" />
+</fieldset>
+</form>
+</body>
+</html>
+
