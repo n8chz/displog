@@ -55,7 +55,8 @@ $coords .= "]";
 # echo "Center point of bounding box: ($lat,$long)";
 # Use http://openlayers.org/dev/examples/geojson.html for display
 fclose($logname);
-echo <<<EOT
+?php>
+
 <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
 <script type="text/JavaScript">
 
@@ -97,8 +98,6 @@ function init() {
 }
 
 </script>
-EOT;
-?>
 </head>
 <body onload="init();">
 <p>Map showing trajectory in GPS Logger file</p>
